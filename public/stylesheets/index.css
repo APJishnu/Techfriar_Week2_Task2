@@ -1,0 +1,1133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'inter';
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+
+}
+
+.sidebar {
+    width: 293px;
+    height: 1019px;
+    background: #0F1738;
+    color: rgb(255, 255, 255);
+    display: flex;
+    
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Smooth transition for toggle */
+
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-right: 24px;
+}
+
+.sidebar-header img {
+    width: 26px;
+    height: 26px;
+}
+
+.logo {
+    display: flex;
+    width: 158px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    gap: 4px;
+}
+
+.menu-icon {
+    display: flex;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    padding-left: 32px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #D36A80;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.company-name {
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.dropdown-arrow img {
+    width: 12px;
+    /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Optional: Adding styles for when the dropdown is active */
+.company-info.active .dropdown-arrow img {
+    transform: rotate(180deg);
+}
+
+
+.nav-list {
+    list-style-type: none;
+    padding-right: 45px;
+    padding-top: 21px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 229px;
+    height: 44px;
+
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: #FFFFFF1A;
+
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.nav-item span {
+    flex-grow: 1;
+}
+
+.badge {
+    background: #E26930;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+    border-radius: 12px;
+    font-size: 12px;
+    width: 27px;
+    height: 24px;
+    left: 137px;
+}
+
+
+/* sidebar-bottom */
+
+.sidebar-bottom {
+    width: 293px;
+    height: 220px;
+    padding: 0;
+    margin-top: 50px;
+
+
+}
+
+.sidebar-bottom .sidebar-bottom-items {
+    width: 226px;
+    height: 150px;
+
+    margin-top: 29px;
+    margin-left: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+}
+
+.sidebar-bottom-items .third-element {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 42px;
+}
+
+.sidebar-bottom-items li {
+    position: relative;
+
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.sidebar-bottom-items li .three-dot {
+    position: absolute;
+    margin-left: 202px;
+}
+
+.sidebar-bottom-items .third-element .three-dot {
+    position: absolute;
+    margin-left: 202px;
+    height: 24px;
+    width: 24px;
+}
+
+.sidebar-bottom-items .third-element .avatar2 {
+    width: 36px;
+    height: 36px;
+    background: #D36A80;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    margin-right: 0px;
+}
+
+.third-element .profile-bottom-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.third-element .profile-bottom-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.third-element .profile-bottom-name span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* //////////////////////////////////////// */
+
+/* section-2 */
+
+.section-2 {
+    width: 423px;
+    height: 1019px;
+    background-color: #F8F9FF;
+    border-right: 2px solid #C9CEE9;
+}
+
+.section-2 .greeting-div {
+    list-style: none;
+    width: 313px;
+    height: 58px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.greeting-div .greeting-heading {
+    display: flex;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+
+.greeting-div .greeting-heading #user-name {
+    margin-left: 10px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.greeting-div .greeting-heading img {
+
+    margin-left: 20px;
+}
+
+.greeting-div .welcome-back {
+    font-weight: 400;
+    color: #6A6A6D;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+
+/* first card div in section-2 styles */
+
+.first-card {
+    position: relative;
+    width: 343px;
+    height: 201px;
+
+    margin-top: 32px;
+    margin-left: 40px;
+
+}
+
+.first-card .card {
+    position: absolute;
+    background: linear-gradient(104.45deg, #7B92F8 -8.72%, #FF9393 102.16%);
+    width: 100%;
+    height: 182px;
+    margin-top: 19px;
+    border-radius: 16px;
+
+
+
+}
+
+.first-card .card .first-div {
+    margin-top: 26px;
+    margin-left: 118px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    width: 162px;
+    height: 46px;
+
+}
+
+.first-card .card .first-div .up-to-date {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.first-card .card .first-div .documents-span {
+
+    font-weight: 500;
+}
+
+.first-card .card .line-img {
+    margin-left: 25px;
+    margin-top: 26px;
+}
+
+.first-card .card .second-div {
+    width: 100%;
+    height: 36px;
+
+    align-items: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+
+}
+
+.first-card .card .second-div p {
+
+    width: 219px;
+    margin-left: 23px;
+    font-size: 14px;
+}
+
+.first-card .card .second-div p span {
+    font-weight: 500;
+}
+
+.first-card .card .second-div .right-arrow {
+
+    margin-right: 32px;
+    width: 21px;
+    height: 21px;
+}
+
+.first-card .first-card-icon1 {
+    position: absolute;
+    width: 87px;
+    height: 99px;
+    z-index: 1;
+    margin-left: 15px;
+}
+
+.first-card .first-card-icon2 {
+    position: absolute;
+
+    z-index: 1;
+    margin-left: 286px;
+    margin-top: 64px;
+}
+
+
+
+/* second-card in section-2 */
+.second-card {
+    position: relative;
+    width: 343px;
+    height: 173px;
+    background: linear-gradient(106deg, #263A8B 0%, #1A213F 121%);
+    border-radius: 16px;
+    border: 1px solid white;
+    margin-left: 40px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+.chart-container {
+    position: relative;
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    background: conic-gradient(#F7AB75 0% 33%,
+            /* Incomplete color segment */
+            #E9697D 33% 66%,
+            /* Pending color segment */
+            #62C378 66% 100%
+            /* Approved color segment */
+        );
+
+}
+
+.chart-total {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: linear-gradient(106deg, #263A8B 0%, #1A213F 121%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+#total-number {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#total-text {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 11px;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.incomplete {
+    background-color: #F7AB75;
+}
+
+.pending {
+    background-color: #E9697D;
+}
+
+.approved {
+    background-color: #62C378;
+}
+
+
+
+/* mailbox div in section-2 */
+
+.mailbox-main-div {
+
+    width: 361px;
+    height: 155px;
+
+    margin-left: 40px;
+    margin-top: 57px;
+
+}
+
+.mailbox-main-div .mailbox-header-div {
+
+
+    list-style: none;
+
+}
+
+.mailbox-main-div .mailbox-header-div .mailbox-header {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+
+
+}
+
+.mailbox-main-div .mailbox-header-div .mailbox-header .link a {
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: 12px;
+    color: #515BAE;
+
+
+}
+
+.mailbox-main-div .mailbox-header-div .mailbox-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 3px;
+
+}
+
+
+.mailbox-main-div .mailbox-content-div {
+    width: 100%;
+    position: relative;
+    height: 81px;
+
+    margin-top: 32px;
+    list-style: none;
+    display: flex;
+
+
+}
+
+.mailbox-main-div .mailbox-content-div li p {
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A6A6D;
+    line-height: 16px;
+}
+
+.mailbox-main-div .mailbox-content-div li img {
+    margin-top: 2px;
+}
+
+.mailbox-main-div .mailbox-content-div li span {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+.mailbox-main-div .mailbox-content-div .first-li {
+    position: absolute;
+}
+
+.mailbox-main-div .mailbox-content-div .second-li {
+    position: absolute;
+    margin-left: 136px;
+
+}
+
+.mailbox-main-div .mailbox-content-div .third-li {
+    position: absolute;
+    margin-left: 270px;
+
+}
+
+.mailbox-main-div .mailbox-content-div .mailbox-line1 {
+    position: absolute;
+    margin-left: 96px;
+    margin-top: 20px;
+}
+
+.mailbox-main-div .mailbox-content-div .mailbox-line2 {
+
+    margin-left: 232px;
+    margin-top: 20px;
+}
+
+
+
+
+/* legal compliance main div in section 2 */
+
+.compliance-main-div{
+    width: 361px;
+    height: 155px;
+    
+    margin-left: 40px;
+    margin-top: 48px;
+}
+
+.compliance-main-div .compliance-header-div {
+    list-style: none;
+}
+
+.compliance-main-div .compliance-header-div .compliance-header {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.compliance-main-div .compliance-header-div .compliance-header .link a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: 12px;
+    color: #515BAE;
+}
+
+.compliance-main-div .compliance-header-div .compliance-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 3px;
+}
+
+.compliance-main-div .compliance-content-div {
+    width: 100%;
+    position: relative;
+    height: 81px;
+    margin-top: 32px;
+    list-style: none;
+    display: flex;
+}
+
+.compliance-main-div .compliance-content-div li p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A6A6D;
+    line-height: 16px;
+   
+}
+
+.compliance-main-div .compliance-content-div li img {
+    margin-top: 2px;
+}
+
+.compliance-main-div .compliance-content-div li span {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+.compliance-main-div .compliance-content-div .first-li {
+    position: absolute;
+}
+
+.compliance-main-div .compliance-content-div .second-li {
+    position: absolute;
+    margin-left: 136px;
+}
+
+.compliance-main-div .compliance-content-div .third-li {
+    position: absolute;
+    margin-left: 270px;
+}
+
+.compliance-main-div .compliance-content-div .compliance-line1 {
+    position: absolute;
+    margin-left: 96px;
+    margin-top: 20px;
+}
+
+.compliance-main-div .compliance-content-div .compliance-line2 {
+    margin-left: 232px;
+    margin-top: 20px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+
+/* section 3  */
+
+.section-3{
+
+    width: 724px;
+    height: 1019px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container3 {
+    width: 644px;
+    height: 889px;
+    margin: 40px;
+   
+}
+@media(min-width:769px) {
+    
+.mobile-container{
+    display: none;
+}
+}
+
+
+
+h2 {
+    font-size: 20px;
+    
+}
+
+.section-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header a {
+    color: #515BAE;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.tabs div {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tabs div.active {
+    font-weight: bold;
+    border-bottom: 2px solid #0F1738;
+    ;
+}
+
+
+/* Table Container for Rounded Corners */
+.table-container {
+    border-radius: 10px;
+    border: 1px solid #E5E9FF;
+    overflow: hidden;
+}
+
+/* Tasks Table */
+.tasks-table {
+    width: 100%;
+    height: 340px;
+    border-collapse: collapse;
+}
+
+
+.tasks-table thead th {
+    text-align: left;
+    font-size: 14px;
+    color: #7c7c7c;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #F8F9FC;
+    
+}
+
+.tasks-table tbody td {
+    padding: 15px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.tasks-table .status-btn {
+    padding: 5px 10px;
+    background: #F1F1F5;
+    color: #6A6A6D;
+
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+.table-container-payment {
+    border-radius: 10px;
+    border: 1px solid #E5E9FF;
+    overflow: hidden;
+}
+
+/* Payment History Table */
+.payment-history-table {
+    width: 100%;
+    height: 384px;;
+    border-collapse: collapse;
+    
+}
+
+.payment-history-table thead th {
+    text-align: left;
+    font-size: 14px;
+    color: #7c7c7c;
+    border-bottom: 1px solid #ddd;
+    background: #F8F9FC;
+
+}
+
+.payment-history-table tbody td {
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #7c7c7c;
+    border-bottom: 1px solid #eee;
+}
+
+.payment-history-table tbody td:first-child {
+    color: black;
+}
+
+.payment-history-table tbody td:nth-child(3) {
+    color: black;
+}
+
+
+
+.tasks-table td, .tasks-table th {
+    /* Customize padding for the tasks table */
+    padding: 14px;
+}
+
+.payment-history-table td, .payment-history-table th {
+    /* Customize padding for the payment history table */
+    padding: 12px;
+}
+
+
+
+
+/* Mobile-Specific Styles */
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+        position: relative;
+        
+    }
+
+   /* Ensure the sidebar is positioned off-screen initially */
+.sidebar {
+    width: 100%; /* Adjust as needed */
+    height: 88px; /* Full height */
+    position: fixed; /* Fixed positioning to stay in place */
+    top: 0;
+    overflow-y: auto; /* Allow scrolling if needed */
+    /* Optional shadow */
+    transition: left 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.sidebar.open {
+    height: 100%;/* Slide into view */
+}
+/* Ensure menu icon changes cursor */
+.menu-icon {
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+    .sidebar .sidebar-header{
+        margin-top: 16px;
+    }
+
+
+    .sidebar .nav-list{
+        width: 100%;
+        align-items: start;
+        
+    }
+    .profile{
+        width: 60%;
+    }
+
+
+
+    /* section 2 */
+
+    
+    .section-2{
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        
+
+    }
+    .section-2 .greeting-div{
+        margin-left:-40px;
+        margin-top: 116px;
+      
+    }
+    
+
+    .first-card{
+        width: 358px;
+        height: 201px;
+        margin-left:0px;
+        margin-bottom: 16px;
+    }
+    .second-card{
+        width: 358px;
+        height: 173px;
+        margin-left: 0px;
+    }
+
+    .mailbox-main-div{
+        margin-left: 16px;
+    }
+
+    .compliance-main-div{
+        margin-left: 16px;
+        margin-bottom: 50px;
+    }
+    
+
+
+
+/* section 3 */
+
+.container3{
+    display: none;
+}
+
+.mobile-container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    
+}
+
+.mobile-task-section {
+    width: 358px;
+    background-color: white;
+    border-radius: 8px;
+    
+    
+}
+
+.mobile-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mobile-section-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mobile-section-header a {
+    font-size: 14px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.mobile-tabs {
+    display: flex;
+
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.mobile-tabs div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+}
+
+.mobile-tabs .active {
+    border-bottom: 2px solid #565563;
+    color: #333;
+}
+
+.mobile-task-item {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mobile-task-item:not(:first-child) {
+    margin-top: 15px;
+}
+
+.mobile-task-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mobile-task-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+}
+
+.mobile-task-info .mobile-category,
+.mobile-task-info .mobile-due-date {
+    font-size: 14px;
+}
+
+.mobile-status {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #e0e0e0;
+    color: #666;
+}
+
+
+.mobile-payment-section {
+    width: 358px;
+    background-color: white;
+    border-radius: 8px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    
+}
+
+.mobile-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mobile-section-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mobile-section-header a {
+    font-size: 14px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.mobile-payment-item {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.mobile-payment-item:not(:first-child) {
+    margin-top: 15px;
+}
+
+.mobile-payment-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mobile-payment-item-header .mobile-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.mobile-payment-item-header .mobile-toggle {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.mobile-payment-item-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.mobile-payment-item.active .mobile-payment-item-details {
+    display: block;
+}
+
+.mobile-payment-item-details .mobile-description {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #888;
+}
+
+.mobile-payment-item-details .mobile-date {
+    font-size: 14px;
+    color: #666;
+}
+
+}
