@@ -495,7 +495,6 @@ body {
 
     width: 361px;
     height: 155px;
-
     margin-left: 40px;
     margin-top: 57px;
 
@@ -918,32 +917,42 @@ h2 {
 
     }
     .section-2 .greeting-div{
-        margin-left:-40px;
+        margin-left:0;
         margin-top: 116px;
       
     }
     
 
     .first-card{
-        width: 358px;
+     
         height: 201px;
-        margin-left:0px;
+        margin: 0;
         margin-bottom: 16px;
     }
     .second-card{
-        width: 358px;
-        height: 173px;
-        margin-left: 0px;
+        margin:0;
     }
 
     .mailbox-main-div{
+        
+        margin: 0;
+        margin-top: 30px;
+       
+    }
+    .mailbox-header-div,.mailbox-content-div{
         margin-left: 16px;
+        margin-right: 16px;
     }
 
     .compliance-main-div{
-        margin-left: 16px;
+        margin-left: 0px;
         margin-bottom: 50px;
     }
+    .compliance-header-div,.compliance-content-div{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
     
 
 
@@ -967,7 +976,7 @@ h2 {
 }
 
 .mobile-task-section {
-    width: 358px;
+    
     background-color: white;
     border-radius: 8px;
     
@@ -1056,6 +1065,7 @@ h2 {
     border-radius: 8px;
     padding-bottom: 40px;
     margin-top: 40px;
+  
     
 }
 
@@ -1064,6 +1074,8 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .mobile-section-header h2 {
@@ -1075,12 +1087,15 @@ h2 {
     font-size: 14px;
     color: #6c63ff;
     text-decoration: none;
+  
 }
 
 .mobile-payment-item {
     border-top: 1px solid #e0e0e0;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
     
 }
 
