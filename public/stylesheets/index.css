@@ -55,7 +55,6 @@ body {
     border: none;
     color: white;
     font-size: 24px;
-    cursor: pointer;
     align-items: center;
 }
 
@@ -881,10 +880,7 @@ h2 {
 .sidebar.open {
     height: 100%;/* Slide into view */
 }
-/* Ensure menu icon changes cursor */
-.menu-icon {
-    cursor: pointer; /* Pointer cursor on hover */
-}
+
 
 
     .sidebar .sidebar-header{
