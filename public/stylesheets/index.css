@@ -9,21 +9,26 @@ body {
     height: 100%;
     display: flex;
     margin: 0;
-
 }
 
+
+
+/* ***************************************************************************************************************** */
+
+
+/* Sidebar container */
 .sidebar {
     width: 293px;
     height: 1019px;
     background: #0F1738;
     color: rgb(255, 255, 255);
     display: flex;
-    
     flex-direction: column;
-    transition: transform 0.3s ease; /* Smooth transition for toggle */
-
+    transition: transform 0.3s ease;
+    /* Smooth transition for toggle */
 }
 
+/* Sidebar header section */
 .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -34,11 +39,13 @@ body {
     padding-right: 24px;
 }
 
+/* Logo image in sidebar header */
 .sidebar-header img {
     width: 26px;
     height: 26px;
 }
 
+/* Logo and title in sidebar header */
 .logo {
     display: flex;
     width: 158px;
@@ -49,6 +56,7 @@ body {
     gap: 4px;
 }
 
+/* Menu icon button */
 .menu-icon {
     display: flex;
     background: none;
@@ -58,13 +66,14 @@ body {
     align-items: center;
 }
 
+/* User profile section */
 .profile {
     display: flex;
     align-items: center;
-
     padding-left: 32px;
 }
 
+/* User avatar */
 .avatar {
     width: 40px;
     height: 40px;
@@ -78,31 +87,28 @@ body {
     margin-right: 10px;
 }
 
+/* Company info section */
 .company-info {
     display: flex;
     align-items: center;
     position: relative;
 }
 
+/* Company name text */
 .company-name {
     font-size: 16px;
     font-weight: normal;
     margin-right: 10px;
 }
 
+/* Dropdown arrow in company info */
 .dropdown-arrow img {
     width: 12px;
-    /* Adjust size as needed */
     height: auto;
     cursor: pointer;
 }
 
-/* Optional: Adding styles for when the dropdown is active */
-.company-info.active .dropdown-arrow img {
-    transform: rotate(180deg);
-}
-
-
+/* Navigation list */
 .nav-list {
     list-style-type: none;
     padding-right: 45px;
@@ -111,11 +117,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-   
-
 }
 
+/* Navigation item */
 .nav-item {
     position: relative;
     display: flex;
@@ -125,15 +129,15 @@ body {
     cursor: pointer;
     width: 229px;
     height: 44px;
-
 }
 
+/* Navigation item hover and active state */
 .nav-item:hover,
 .nav-item.active {
     background: #FFFFFF1A;
-
 }
 
+/* Icon within navigation item */
 .icon {
     margin-right: 10px;
     font-size: 18px;
@@ -141,10 +145,7 @@ body {
     display: flex;
 }
 
-.nav-item span {
-    flex-grow: 1;
-}
-
+/* Badge on navigation item */
 .badge {
     background: #E26930;
     position: absolute;
@@ -159,22 +160,18 @@ body {
     left: 137px;
 }
 
-
-/* sidebar-bottom */
-
+/* Sidebar bottom section */
 .sidebar-bottom {
     width: 293px;
     height: 220px;
     padding: 0;
     margin-top: 50px;
-
-
 }
 
+/* Items in the sidebar bottom section */
 .sidebar-bottom .sidebar-bottom-items {
     width: 226px;
     height: 150px;
-
     margin-top: 29px;
     margin-left: 29px;
     display: flex;
@@ -184,38 +181,32 @@ body {
     gap: 30px;
 }
 
+/* Third element in the sidebar bottom items */
 .sidebar-bottom-items .third-element {
     position: relative;
     display: flex;
-
     width: 100%;
     height: 42px;
 }
 
+/* List items in the sidebar bottom section */
 .sidebar-bottom-items li {
     position: relative;
-
     width: 100%;
     height: 24px;
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 10px;
-
 }
 
-.sidebar-bottom-items li .three-dot {
+/* Three-dot menu in the sidebar bottom section */
+.sidebar-bottom-items .three-dot {
     position: absolute;
     margin-left: 202px;
 }
 
-.sidebar-bottom-items .third-element .three-dot {
-    position: absolute;
-    margin-left: 202px;
-    height: 24px;
-    width: 24px;
-}
-
+/* Additional avatar in the sidebar bottom section */
 .sidebar-bottom-items .third-element .avatar2 {
     width: 36px;
     height: 36px;
@@ -229,25 +220,23 @@ body {
     margin-right: 0px;
 }
 
+/* Profile name in the sidebar bottom section */
 .third-element .profile-bottom-name {
     display: flex;
     flex-direction: column;
 }
 
-.third-element .profile-bottom-name {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Profile name text in the sidebar bottom section */
 .third-element .profile-bottom-name span {
     font-size: 12px;
     font-weight: 300;
 }
 
-/* //////////////////////////////////////// */
 
-/* section-2 */
 
+/* ***************************************************************************************************************** */
+
+/* Section 2 container */
 .section-2 {
     width: 423px;
     height: 1019px;
@@ -255,6 +244,7 @@ body {
     border-right: 2px solid #C9CEE9;
 }
 
+/* Greeting div in section-2 */
 .section-2 .greeting-div {
     list-style: none;
     width: 313px;
@@ -263,25 +253,27 @@ body {
     margin-top: 40px;
 }
 
+/* Greeting heading in greeting-div */
 .greeting-div .greeting-heading {
     display: flex;
     font-size: 26px;
     font-weight: 400;
     line-height: 28px;
-
 }
 
+/* User name in greeting heading */
 .greeting-div .greeting-heading #user-name {
     margin-left: 10px;
     font-weight: 500;
     line-height: 28px;
 }
 
+/* Image in greeting heading */
 .greeting-div .greeting-heading img {
-
     margin-left: 20px;
 }
 
+/* Welcome back text in greeting-div */
 .greeting-div .welcome-back {
     font-weight: 400;
     color: #6A6A6D;
@@ -289,19 +281,16 @@ body {
     line-height: 23px;
 }
 
-
-/* first card div in section-2 styles */
-
+/* First card in section-2 */
 .first-card {
     position: relative;
     width: 343px;
     height: 201px;
-
     margin-top: 32px;
     margin-left: 40px;
-
 }
 
+/* Card inside the first card */
 .first-card .card {
     position: absolute;
     background: linear-gradient(104.45deg, #7B92F8 -8.72%, #FF9393 102.16%);
@@ -309,11 +298,9 @@ body {
     height: 182px;
     margin-top: 19px;
     border-radius: 16px;
-
-
-
 }
 
+/* First div inside the card */
 .first-card .card .first-div {
     margin-top: 26px;
     margin-left: 118px;
@@ -322,56 +309,57 @@ body {
     line-height: 18px;
     width: 162px;
     height: 46px;
-
 }
 
+/* "Up to date" text in first div */
 .first-card .card .first-div .up-to-date {
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
 }
 
+/* Documents span text in first div */
 .first-card .card .first-div .documents-span {
-
     font-weight: 500;
 }
 
+/* Line image inside the card */
 .first-card .card .line-img {
     margin-left: 25px;
     margin-top: 26px;
 }
 
+/* Second div inside the card */
 .first-card .card .second-div {
     width: 100%;
     height: 36px;
-
     align-items: justify;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
-
-
 }
 
+/* Paragraph text in second div */
 .first-card .card .second-div p {
-
     width: 219px;
     margin-left: 23px;
     font-size: 14px;
 }
 
+/* Span text in second div paragraph */
 .first-card .card .second-div p span {
     font-weight: 500;
 }
 
+/* Right arrow image in second div */
 .first-card .card .second-div .right-arrow {
-
     margin-right: 32px;
     width: 21px;
     height: 21px;
 }
 
+/* First card icon 1 */
 .first-card .first-card-icon1 {
     position: absolute;
     width: 87px;
@@ -380,17 +368,15 @@ body {
     margin-left: 15px;
 }
 
+/* First card icon 2 */
 .first-card .first-card-icon2 {
     position: absolute;
-
     z-index: 1;
     margin-left: 286px;
     margin-top: 64px;
 }
 
-
-
-/* second-card in section-2 */
+/* Second card in section-2 */
 .second-card {
     position: relative;
     width: 343px;
@@ -406,9 +392,9 @@ body {
     padding: 10px;
     box-sizing: border-box;
     color: white;
-
 }
 
+/* Chart container in second card */
 .chart-container {
     position: relative;
     width: 123px;
@@ -421,9 +407,9 @@ body {
             #62C378 66% 100%
             /* Approved color segment */
         );
-
 }
 
+/* Total display in chart container */
 .chart-total {
     position: absolute;
     top: 50%;
@@ -442,18 +428,21 @@ body {
     gap: 4px;
 }
 
+/* Total number text in chart-total */
 #total-number {
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
 }
 
+/* Total text in chart-total */
 #total-text {
     font-size: 11px;
     font-weight: 400;
     line-height: 11px;
 }
 
+/* Legend container in second card */
 .legend {
     display: flex;
     flex-direction: column;
@@ -461,11 +450,13 @@ body {
     gap: 10px;
 }
 
+/* Legend item in legend container */
 .legend-item {
     display: flex;
     align-items: center;
 }
 
+/* Color box in legend item */
 .legend-color {
     display: inline-block;
     width: 10px;
@@ -474,90 +465,84 @@ body {
     margin-right: 10px;
 }
 
+/* Incomplete color in legend */
 .incomplete {
     background-color: #F7AB75;
 }
 
+/* Pending color in legend */
 .pending {
     background-color: #E9697D;
 }
 
+/* Approved color in legend */
 .approved {
     background-color: #62C378;
 }
 
 
 
-/* mailbox div in section-2 */
-
+/* Mailbox main container in section-2 */
 .mailbox-main-div {
-
     width: 361px;
     height: 155px;
     margin-left: 40px;
     margin-top: 57px;
-
 }
 
+/* Header section inside the mailbox container */
 .mailbox-main-div .mailbox-header-div {
-
-
     list-style: none;
-
 }
 
+/* Mailbox header text style */
 .mailbox-main-div .mailbox-header-div .mailbox-header {
     font-size: 22px;
     font-weight: 500;
     line-height: 22px;
-
-
 }
 
+/* Link style in mailbox header */
 .mailbox-main-div .mailbox-header-div .mailbox-header .link a {
-
     font-size: 14px;
     font-weight: 500;
     line-height: 19px;
     margin-left: 12px;
     color: #515BAE;
-
-
 }
 
+/* Description text in mailbox header */
 .mailbox-main-div .mailbox-header-div .mailbox-description {
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
     margin-top: 3px;
-
 }
 
-
+/* Mailbox content container */
 .mailbox-main-div .mailbox-content-div {
     width: 100%;
     position: relative;
     height: 81px;
-
     margin-top: 32px;
     list-style: none;
     display: flex;
-
-
 }
 
+/* Paragraph text in mailbox content */
 .mailbox-main-div .mailbox-content-div li p {
-
     font-size: 14px;
     font-weight: 400;
     color: #6A6A6D;
     line-height: 16px;
 }
 
+/* Image in mailbox content list items */
 .mailbox-main-div .mailbox-content-div li img {
     margin-top: 2px;
 }
 
+/* Span text in mailbox content list items */
 .mailbox-main-div .mailbox-content-div li span {
     position: absolute;
     font-size: 20px;
@@ -567,30 +552,32 @@ body {
     margin-top: -10px;
 }
 
+/* Positioning for the first list item in mailbox content */
 .mailbox-main-div .mailbox-content-div .first-li {
     position: absolute;
 }
 
+/* Positioning for the second list item in mailbox content */
 .mailbox-main-div .mailbox-content-div .second-li {
     position: absolute;
     margin-left: 136px;
-
 }
 
+/* Positioning for the third list item in mailbox content */
 .mailbox-main-div .mailbox-content-div .third-li {
     position: absolute;
     margin-left: 270px;
-
 }
 
+/* Positioning for the first line in mailbox content */
 .mailbox-main-div .mailbox-content-div .mailbox-line1 {
     position: absolute;
     margin-left: 96px;
     margin-top: 20px;
 }
 
+/* Positioning for the second line in mailbox content */
 .mailbox-main-div .mailbox-content-div .mailbox-line2 {
-
     margin-left: 232px;
     margin-top: 20px;
 }
@@ -600,14 +587,15 @@ body {
 
 /* legal compliance main div in section 2 */
 
-.compliance-main-div{
+.compliance-main-div {
     width: 361px;
     height: 155px;
-    
+
     margin-left: 40px;
     margin-top: 48px;
 }
 
+/* legal compliance header div section 2 */
 .compliance-main-div .compliance-header-div {
     list-style: none;
 }
@@ -633,6 +621,7 @@ body {
     margin-top: 3px;
 }
 
+/* legal compliance content div in section 2 */
 .compliance-main-div .compliance-content-div {
     width: 100%;
     position: relative;
@@ -647,7 +636,7 @@ body {
     font-weight: 400;
     color: #6A6A6D;
     line-height: 16px;
-   
+
 }
 
 .compliance-main-div .compliance-content-div li img {
@@ -689,11 +678,14 @@ body {
 }
 
 
-/* //////////////////////////////////////////////////////////////////// */
+/* ***************************************************************************************************************** */
 
-/* section 3  */
 
-.section-3{
+
+
+/* section 3  styles*/
+
+.section-3 {
 
     width: 724px;
     height: 1019px;
@@ -702,24 +694,27 @@ body {
 
 }
 
+/* container for padding elements */
 .container3 {
     width: 644px;
     height: 889px;
     margin: 40px;
-   
+
 }
+
+/* hide the mobile-container in Desktop  */
 @media(min-width:769px) {
-    
-.mobile-container{
-    display: none;
-}
+
+    .mobile-container {
+        display: none;
+    }
 }
 
 
 
 h2 {
     font-size: 20px;
-    
+
 }
 
 .section-header {
@@ -776,7 +771,7 @@ h2 {
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
     background: #F8F9FC;
-    
+
 }
 
 .tasks-table tbody td {
@@ -797,6 +792,7 @@ h2 {
 }
 
 
+/* table continer for payment history */
 
 .table-container-payment {
     border-radius: 10px;
@@ -807,9 +803,10 @@ h2 {
 /* Payment History Table */
 .payment-history-table {
     width: 100%;
-    height: 384px;;
+    height: 384px;
+    ;
     border-collapse: collapse;
-    
+
 }
 
 .payment-history-table thead th {
@@ -838,17 +835,22 @@ h2 {
 
 
 
-.tasks-table td, .tasks-table th {
+.tasks-table td,
+.tasks-table th {
     /* Customize padding for the tasks table */
     padding: 14px;
 }
 
-.payment-history-table td, .payment-history-table th {
+.payment-history-table td,
+.payment-history-table th {
     /* Customize padding for the payment history table */
     padding: 12px;
 }
 
 
+/* ***************************************************************************************************************** */
+/* **********************************************style for mobile screen starts********************************************* */
+/* ***************************************************************************************************************** */
 
 
 /* Mobile-Specific Styles */
@@ -859,286 +861,344 @@ h2 {
         height: 100%;
         display: flex;
         flex-direction: column;
-        
-        
+
+
         position: relative;
-        
+
     }
 
-   /* Ensure the sidebar is positioned off-screen initially */
-.sidebar {
-    width: 100%; /* Adjust as needed */
-    height: 88px; /* Full height */
-    position: fixed; /* Fixed positioning to stay in place */
-    top: 0;
-    overflow-y: auto; /* Allow scrolling if needed */
-    /* Optional shadow */
-    transition: left 0.3s ease; /* Smooth transition */
-    z-index: 1000; /* Ensure it's above other content */
-}
+    /* ***************************************************************************************************************** */
 
-.sidebar.open {
-    height: 100%;/* Slide into view */
-}
+    /* Ensure the sidebar is positioned off-screen initially */
+    .sidebar {
+        width: 100%;
+        height: 88px;
+        position: fixed;
+        top: 0;
+        overflow-y: hidden;
+        overflow-x: hidden !important;
+        /* Allow scrolling if needed */
+        transition: right 0.3s ease;
+        z-index: 1000;
+        
+        
+        /* Ensure it's above other content */
+    }
+
+    .sidebar.open {
+        height: 100%;
+        /* Slide into view */
+        overflow-y: auto;
+    }
 
 
 
-    .sidebar .sidebar-header{
+    .sidebar.open .menu-icon img{
+        content: url("../images/toggle-icon.svg");
+        width: 30px;
+        height: 30px;
+        padding: 0;
+       
+    }
+    
+
+
+
+    .sidebar .sidebar-header {
         margin-top: 16px;
     }
 
 
-    .sidebar .nav-list{
+    .sidebar .nav-list {
         width: 100%;
         align-items: start;
-        
+
     }
-    .profile{
+
+    .profile {
         width: 60%;
     }
 
+    /* ***************************************************************************************************************** */
 
 
-    /* section 2 */
+    /* section 2 styles*/
 
-    
-    .section-2{
+
+    .section-2 {
         width: 100%;
         overflow-x: hidden;
         display: flex;
         flex-direction: column;
-       
+
         align-items: center;
-        
+
 
     }
-    .section-2 .greeting-div{
-        margin-left:0;
+
+    .section-2 .greeting-div {
+        margin-left: 0;
         margin-top: 116px;
-      
-    }
-    
 
-    .first-card{
-     
+    }
+
+    /* first card styles */
+
+    .first-card {
+
         height: 201px;
         margin: 0;
         margin-bottom: 16px;
     }
-    .second-card{
-        margin:0;
+
+    /* second-card styles */
+
+    .second-card {
+        margin: 0;
     }
 
-    .mailbox-main-div{
-        
+
+    /* mailbox container styles */
+
+    .mailbox-main-div {
+
         margin: 0;
         margin-top: 30px;
-       
+
     }
-    .mailbox-header-div,.mailbox-content-div{
+
+    .mailbox-header-div,
+    .mailbox-content-div {
         margin-left: 16px;
         margin-right: 16px;
     }
 
-    .compliance-main-div{
+    /* compliance container styles */
+
+    .compliance-main-div {
         margin-left: 0px;
         margin-bottom: 50px;
     }
-    .compliance-header-div,.compliance-content-div{
+
+    .compliance-header-div,
+    .compliance-content-div {
         margin-left: 16px;
         margin-right: 16px;
     }
 
-    
+
+
+    /* ***************************************************************************************************************** */
+
+    /* section 3 styles*/
+
+    .container3 {
+        display: none;
+    }
+
+    .mobile-container {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    /* task section styles */
+
+    .mobile-task-section {
+
+        background-color: white;
+        border-radius: 8px;
+
+
+    }
+
+    .mobile-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .mobile-section-header h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .mobile-section-header a {
+        font-size: 14px;
+        color: #6c63ff;
+        text-decoration: none;
+    }
+
+    .mobile-tabs {
+        display: flex;
+
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 20px;
+    }
+
+    .mobile-tabs div {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #888;
+    }
+
+    .mobile-tabs .active {
+        border-bottom: 2px solid #565563;
+        color: #333;
+    }
+
+    .mobile-task-item {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .mobile-task-item:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    .mobile-task-item h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .mobile-task-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        font-size: 14px;
+        color: #888;
+    }
+
+    .mobile-task-info .mobile-category,
+    .mobile-task-info .mobile-due-date {
+        font-size: 14px;
+    }
+
+    .mobile-status {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        background-color: #e0e0e0;
+        color: #666;
+    }
 
 
 
-/* section 3 */
+    /* payement history section styles */
 
-.container3{
-    display: none;
-}
-
-.mobile-container {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    
-}
-
-.mobile-task-section {
-    
-    background-color: white;
-    border-radius: 8px;
-    
-    
-}
-
-.mobile-section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.mobile-section-header h2 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.mobile-section-header a {
-    font-size: 14px;
-    color: #6c63ff;
-    text-decoration: none;
-}
-
-.mobile-tabs {
-    display: flex;
-
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 20px;
-}
-
-.mobile-tabs div {
-    padding: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    color: #888;
-}
-
-.mobile-tabs .active {
-    border-bottom: 2px solid #565563;
-    color: #333;
-}
-
-.mobile-task-item {
-    border-top: 1px solid #e0e0e0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.mobile-task-item:not(:first-child) {
-    margin-top: 15px;
-}
-
-.mobile-task-item h3 {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.mobile-task-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-    font-size: 14px;
-    color: #888;
-}
-
-.mobile-task-info .mobile-category,
-.mobile-task-info .mobile-due-date {
-    font-size: 14px;
-}
-
-.mobile-status {
-    margin-top: 10px;
-    display: inline-block;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    background-color: #e0e0e0;
-    color: #666;
-}
+    .mobile-payment-section {
+        width: 358px;
+        background-color: white;
+        border-radius: 8px;
+        padding-bottom: 40px;
+        margin-top: 40px;
 
 
-.mobile-payment-section {
-    width: 358px;
-    background-color: white;
-    border-radius: 8px;
-    padding-bottom: 40px;
-    margin-top: 40px;
-  
-    
-}
+    }
 
-.mobile-section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
+    .mobile-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 
-.mobile-section-header h2 {
-    font-size: 18px;
-    font-weight: bold;
-}
+    .mobile-section-header h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-.mobile-section-header a {
-    font-size: 14px;
-    color: #6c63ff;
-    text-decoration: none;
-  
-}
+    .mobile-section-header a {
+        font-size: 14px;
+        color: #6c63ff;
+        text-decoration: none;
 
-.mobile-payment-item {
-    border-top: 1px solid #e0e0e0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 16px;
-    margin-right: 16px;
-    
-}
+    }
 
-.mobile-payment-item:not(:first-child) {
-    margin-top: 15px;
-}
+    /* mobile payment items styles */
 
-.mobile-payment-item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    font-weight: bold;
-}
+    .mobile-payment-item {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 16px;
+        margin-right: 16px;
 
-.mobile-payment-item-header .mobile-amount {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-}
+    }
 
-.mobile-payment-item-header .mobile-toggle {
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-}
+    .mobile-payment-item:not(:first-child) {
+        margin-top: 15px;
+    }
 
-.mobile-payment-item-details {
-    display: none;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #888;
-}
+    .mobile-payment-item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
 
-.mobile-payment-item.active .mobile-payment-item-details {
-    display: block;
-}
+    .mobile-payment-item-header .mobile-amount {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
 
-.mobile-payment-item-details .mobile-description {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #888;
-}
+    /* toggle for see  transaction history */
 
-.mobile-payment-item-details .mobile-date {
-    font-size: 14px;
-    color: #666;
-}
+
+    /* Mobile payment item toggle icon */
+    .mobile-toggle {
+        font-size: 14px;
+        color: #333;
+        content: url("../images/mobile-payement-dropdown.svg");
+        transition: transform 0.3s ease;
+        transform: rotate(180deg);
+        /* Smooth rotation */
+    }
+
+    /* Rotation when the item is active */
+    .mobile-payment-item.active .mobile-toggle {
+        transform: rotate(0deg);
+        /* Rotate the icon when active */
+    }
+
+
+    .mobile-payment-item-details {
+        display: none;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #888;
+    }
+
+    .mobile-payment-item.active .mobile-payment-item-details {
+        display: block;
+    }
+
+    .mobile-payment-item-details .mobile-description {
+        font-size: 14px;
+        margin-top: 5px;
+        color: #888;
+    }
+
+    .mobile-payment-item-details .mobile-date {
+        font-size: 14px;
+        color: #666;
+    }
+
+    /* ***************************************************************************************************************** */
 
 }

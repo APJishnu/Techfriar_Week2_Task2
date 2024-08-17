@@ -22,7 +22,9 @@ const userName = "Emily"; // This can be fetched dynamically, e.g., from a serve
 updateGreeting(userName);
 
 
-// chart section
+// *****************************************************************************************************************
+
+// chart section in section 2
 
 function updateChart(incomplete, pending, approved) {
     const total = incomplete + pending + approved;
@@ -52,8 +54,15 @@ function updateChart(incomplete, pending, approved) {
     totalText.textContent = 'Applications';
 }
 
-// Example data
-const incomplete =25;
+
+
+
+// *****************************************************************************************************************
+
+// mailbox dynamic data in section 2
+
+// Example data 
+const incomplete = 25;
 const pending = 25;
 const approved = 50;
 
@@ -86,7 +95,7 @@ function updateMailboxCounts() {
 updateMailboxCounts();
 
 
-// compliance dynamic
+// compliance dynamic data in section 2
 
 // Sample dynamic data source (replace with real API calls if necessary)
 const complianceData = {
@@ -105,9 +114,11 @@ function updateComplianceCounts() {
 updateComplianceCounts();
 
 
+// *****************************************************************************************************************
 
 
-// section 3 first table dynamic
+
+// section 3 first table and second table dynamic
 
 
 // Array of task objects
@@ -198,19 +209,28 @@ populateTasks();
 populatePayments();
 
 
+// *****************************************************************************************************************
+// *******************************************mobile display scripts***************************************************
+// *****************************************************************************************************************
 
-
-// responsive toggle side bar 
+// responsive toggle side bar -nav bar
 function toggleSidebar() {
     var sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('open');
 }
 
 
-
-    // Toggle payment item details
-    document.querySelectorAll('.mobile-payment-item').forEach(item => {
-        item.addEventListener('click', function () {
-            this.classList.toggle('active');
-        });
+// *****************************************************************************************************************
+// Toggle payment item details and rotate the icon
+document.querySelectorAll('.mobile-payment-item-header').forEach(header => {
+    header.addEventListener('click', function () {
+        const parentItem = this.parentElement;
+        // Toggle the 'active' class on the parent item
+        parentItem.classList.toggle('active');
     });
+});
+
+
+
+// *****************************************************************************************************************
+
